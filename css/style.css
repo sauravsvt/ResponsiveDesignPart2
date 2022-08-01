@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?yqqwkp');
+  src:  url('../fonts/icomoon.eot?yqqwkp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?yqqwkp') format('truetype'),
+    url('../fonts/icomoon.woff?yqqwkp') format('woff'),
+    url('../fonts/icomoon.svg?yqqwkp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping-bag:before {
+  content: "\e900";
+  font-size: 60px;
+  color: red;
+}
+.icon-cart:before {
+  content: "\e93a";
+  font-size: 60px;
+  color: red;
+}
+.icon-display:before {
+  content: "\e956";
+  font-size: 60px;
+  color: red;
+}
+.icon-bubbles3:before {
+  content: "\e96f";
+  font-size: 60px;
+  color: red;
+}
+.icon-gift:before {
+  content: "\e99f";
+  font-size: 60px;
+  color: red;
+}
+.icon-truck:before {
+  content: "\e9b0";
+  font-size: 60px;
+  color: red;
+}
+.icon-list2:before {
+  content: "\e9bb";
+  font-size:25px;
+  color: blue;
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+body{
+	font-family: sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+.block-wrap{
+	display: flex;
+	flex-flow:wrap;
+
+}
+.block-wrap > *{
+	padding: 20px 30px;
+	border: 1px solid blue;
+	margin: 10px;
+	text-align: center;
+}
+
+.block-wrap i::before{
+	font-size: 60px;
+	color: green;
+}
+
+
+footer{
+
+  background: black;
+  padding: 40px;
+  color: white;
+}
+
+.footer-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.social-media{
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+
+.popup{
+  height: 400px;
+  width: 1000px;
+  background-color: white;
+  position: relative;
+  margin-top: -99%;
+  margin-left: 130px;
+  display: none;
+
+}
+
+.close{
+  height: 15px;
+  width: 15px;
+  position:absolute;
+  margin-left: 96%;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  font-size: 50px;
+}
+
+.form-warp{
+  display: flex;
+  flex-direction: row;
+}
+
+.formimg{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form{
+  height: 400px;
+  padding: 10px;
+  margin-left: -400px;
+}
+
+.input{
+  height: 30px;
+  width:75%;
+  margin: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: rgb(232, 232, 241);
+}
+.btn-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.submit{
+  height: 30px;
+  width: 150px;
+  margin-right: 70px;
+  background-color: #20eb4c;
+  color: #ffffff;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(214, 25, 25, 0.5);
+  /* pointer-events: none; */
+}
+
+/* #overlay.active{
+  opacity: 1;
+  pointer-events: all;
+} */  
+
+@media only screen and (min-width: 128px){
+  .block-wrap > * {
+    width: calc(33%-20px);
+  }
+}
+
+@media only screen and (min-width: 750px){
+  .block-wrap > * {
+    width: calc(50%-20px);
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  button {
+    background: blue;
+    margin-left: 300px;
+  }
+}
